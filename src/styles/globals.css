@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: 79, 70, 229;
+  --primary-light: 99, 102, 241;
+  --secondary: 236, 72, 153;
+  --background: 249, 250, 251;
+  --foreground: 17, 24, 39;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, rgba(var(--primary), 0.1), rgba(var(--secondary), 0.1));
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(var(--foreground), 0.2);
+  border-radius: 4px;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: rgb(var(--primary));
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: rgb(var(--primary-light));
+}
+
+.btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
